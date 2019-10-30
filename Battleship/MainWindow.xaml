@@ -1,0 +1,18 @@
+﻿<Window x:Class="Battleship.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Battleship"
+        mc:Ignorable="d"
+        Title="Battleship" Height="300" Width="293.333">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="#FFD0D6FF" Offset="1"/>
+            <GradientStop Color="White"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+
+    </Grid>
+</Window>

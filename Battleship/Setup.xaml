@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Battleship.Setup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Battleship"
+             mc:Ignorable="d" Height="300" Width="323">
+    <StackPanel>
+        <Label x:Name="lblWelcome" Content="Welcome to Battleship" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Stencil" FontSize="16.667" Width="234" Foreground="#FF5284C0" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lblName" Content="What is your name:" HorizontalAlignment="Center"  VerticalAlignment="Top" FontFamily="Stencil" FontSize="14.667" Width="163" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="txtboxName" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="122" FontFamily="Stencil" FontSize="14.667" Foreground="Brown" Background="White"/>
+        <Label x:Name="lblDifficulty" Content="Choose Difficulty" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Stencil" FontSize="14.667" Foreground="#FF5284C0" HorizontalContentAlignment="Center"/>
+        <RadioButton x:Name="rbtnSimple" Content="Simple" GroupName="difficulty" VerticalAlignment="Top" IsChecked="True" HorizontalAlignment="Center" Width="74" Click="rbtnSimple_Click" FontFamily="Stencil" FontSize="13.667" />
+        <RadioButton x:Name="rbtnIntelligent" Content="Intelligent" GroupName="difficulty" VerticalAlignment="Top" HorizontalAlignment="Center" Width="107" Click="rbtnIntelligent_Click" FontFamily="Stencil" FontSize="13.667" IsChecked="True"/>
+        <Label HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Stencil" FontSize="14.667" Foreground="#FF5284C0" HorizontalContentAlignment="Center">Game Mode</Label>
+        <ComboBox x:Name="cboxGameMode" Width="122" Height="23" VerticalAlignment="Top"/>
+        <Button x:Name="btnPlay" Content="Play" HorizontalAlignment="Center" Margin="0 15 0 0" Height="42" Click="buttonStart_Click" Width="94" VerticalAlignment="Top" IsDefault="True" FontFamily="Stencil" FontSize="14.667" FontWeight="Bold" Background="#FF5284C0" BorderBrush="#FFC1C0E8" Foreground ="White"/>
+    </StackPanel>
+</UserControl>
